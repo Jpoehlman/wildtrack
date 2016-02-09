@@ -4,6 +4,6 @@ require 'sinatra'
 
 class AddressBook < Sinatra::Base
   get '/' do
-    'Hello Jon!'
+    'Hi Mary Bennett!'
   end
 end
