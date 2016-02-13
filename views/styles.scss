@@ -1,0 +1,73 @@
+$red: #904;
+$black: #444;
+$white: #fff;
+$main-font: Helvetica, Arial, sans-serif;
+
+body {
+  font-family: $main-font;
+  background: #222222;
+}
+
+h1 {
+  color: $red;
+  font: 55px/1 $main-font;
+}
+
+header h1 {
+  font-size: 55px;
+  line-height: 80px;
+  background: transparent url(/images/logo.png) 0 0 no-repeat;
+  padding-left: 84px;
+}
+
+@mixin tabs ($background: blue, $color: yellow) {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: $background;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+    color: $red;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    background: $background;
+    color: $color;
+    &:hover {
+      background: darken($background, 20%);
+    }
+  }
+}
+
+
+nav {
+  @include tabs ($background: $black, $color: $white);
+  font-weight: bold;
+}
+
+p {
+  font: 13px/1.4 $main-font;
+}
+
+label {
+  display: block;
+}
+
+nav a.current {
+  background: lighten($black, 5%);
+}
+
+.flash {
+  width: 600px;
+  padding: 5px;
+  font-weight: bold;
+  margin: 20px;
+  background: lighten($red, 60%);
+  color: $red;
+  border: 1px solid $red;
+}

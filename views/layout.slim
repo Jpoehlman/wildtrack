@@ -1,7 +1,13 @@
 doctype html
-html
+html lang="en"
   head
-    title sinatra address book
-    link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"
+    title== @title || "WildTrack"
+    meta charset="utf-8"
+    link rel="Stylesheet" href="/styles.css"
+
   body
+    header
+    h1 WildTrack
+    == slim :nav
+  section
     == yield
