@@ -1,0 +1,27 @@
+
+	.container-header
+		.navbar-header
+			a.navbar-brand href="/" WildTrack
+			button.navbar-toggle data-target="#navbar-main" data-toggle="collapse" type="button"
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+		#navbar-main.navbar-collapse.collapse
+			ul.nav.navbar-nav
+				li
+					a href="#about" Home
+				li
+					a href="http://www.google.com" target="_blank" Google
+				li.dropdown
+					a#themes.dropdown-toggle data-toggle="dropdown" href="#"
+						| Dropdown
+						span.caret
+					ul.dropdown-menu aria-labelledby="themes"
+						li
+							a Add
+						li.divider
+						li
+							a Subtract
+			ul.nav.navbar-nav.navbar-right
+				li
+					a Right Menu

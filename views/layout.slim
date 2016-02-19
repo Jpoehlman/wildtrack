@@ -1,13 +1,16 @@
-doctype html
-html lang="en"
-  head
-    title== @title || "WildTrack"
-    meta charset="utf-8"
-    link rel="Stylesheet" href="/styles.css"
-
-  body
-    header
-    h1 WildTrack
-    == slim :nav
-  section
-    == yield
+html
+	head
+		title
+			| WildTrack
+		link href="//netdna.bootstrapcdn.com/bootswatch/3.1.0/united/bootstrap.min.css" rel="stylesheet" type="text/css"
+			link href="style.css" rel="stylesheet" type="text/css"
+	body
+		== slim :header
+		.wrapper
+			.container
+				== yield
+			.push
+		.footer-wrapper
+			== slim :footer
+		script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+		script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"
