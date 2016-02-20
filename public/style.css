@@ -33,7 +33,7 @@ section {
 /*-----------------------------------------------------------------*/
 
 .container-header {
-  background-image: url("background.jpg");
+ background-color: #342e3a;
   }
 
 a.navbar-brand {
@@ -107,7 +107,7 @@ footer {
     width: 100%;
     /*Do not change the height as it's part of the sticky footer*/
     height: 80px;
-    background-image: url("background.jpg");
+    background-color: #342e3a;
     border-top: 1px solid lightgrey;
     padding-top: 10px;
     margin-top: 20px;
