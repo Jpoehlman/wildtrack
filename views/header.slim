@@ -1,4 +1,3 @@
-
 	.container-header
 		.navbar-header
 			a.navbar-brand href="/" WildTrack
@@ -8,20 +7,19 @@
 				span.icon-bar
 		#navbar-main.navbar-collapse.collapse
 			ul.nav.navbar-nav
-				li
-					a href="#about" Home
-				li
-					a href="http://www.google.com" target="_blank" Google
-				li.dropdown
-					a#themes.dropdown-toggle data-toggle="dropdown" href="#"
-						| Dropdown
-						span.caret
-					ul.dropdown-menu aria-labelledby="themes"
-						li
-							a Add
-						li.divider
-						li
-							a Subtract
+					li
+						<a href="/about" title="About"> About </a>
+					li
+						<a href="http://www.google.com" title="Google"> Google </a>
+
 			ul.nav.navbar-nav.navbar-right
-				li
-					a Right Menu
+					li.dropdown
+						a#themes.dropdown-toggle data-toggle="dropdown" href="#"
+							| SIGN IN
+							span.caret
+						ul.dropdown-menu aria-labelledby="themes"
+							li
+								a href="/about"  Sign Up
+							li.divider
+							li
+								a href="/login"  title="Login" Log In

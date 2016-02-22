@@ -1,12 +1,13 @@
-/* Style sheet for 1 minute web app by Andy Brown */
-
-/* The body needs 50px padding because of the fixed navbar. This is a bootstrap thing. */
 body {
   padding-top: 50px;
 }
 
 h1 {
     text-align: center;
+}
+
+li {
+    color: black;
 }
 
 p {
@@ -33,12 +34,13 @@ section {
 /*-----------------------------------------------------------------*/
 
 .container-header {
- background-color: #342e3a;
+ background-color: white;
+ border: 1px solid lightgrey;
   }
 
 a.navbar-brand {
-color: white;
-font-size: 48;
+color: red;
+font-size: 56;
 }
 
 /*-----------------------------------------------------------------*/
@@ -63,7 +65,7 @@ font-size: 48;
 }
 
 .jumbotron input {
-    color: darkgrey;
+    color: red;
     margin: 5px;
 }
 
@@ -107,9 +109,9 @@ footer {
     width: 100%;
     /*Do not change the height as it's part of the sticky footer*/
     height: 80px;
-    background-color: #342e3a;
+    background-color: white;
     border-top: 1px solid lightgrey;
     padding-top: 10px;
     margin-top: 20px;
-    color: white;
+    color: red;
 }
