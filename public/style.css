@@ -32,19 +32,13 @@ section {
 }
 
 /*-----------------------------------------------------------------*/
-.navbar-inverse .navbar-nav > li > a {
-  color: red;
+ .navbar-inverse .navbar-nav > li > a {
+   font-size: 20;
 }
 
-a.navbar-brand  {
-  font-size: 110;
-  color: yellow:
- }
-
-#myNavbar {
-  font-size: 20;
-}
-
+.navbar-brand  {
+  font-size: 55;
+   }
 
 /*-----------------------------------------------------------------*/
 
