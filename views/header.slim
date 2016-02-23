@@ -1,25 +1,24 @@
-	.container-header
-		.navbar-header
-			a.navbar-brand href="/" WildTrack
-			button.navbar-toggle data-target="#navbar-main" data-toggle="collapse" type="button"
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-		#navbar-main.navbar-collapse.collapse
-			ul.nav.navbar-nav
-					li
-						<a href="/about" title="About"> About </a>
-					li
-						<a href="http://www.google.com" title="Google"> Google </a>
 
-			ul.nav.navbar-nav.navbar-right
-					li.dropdown
-						a#themes.dropdown-toggle data-toggle="dropdown" href="#"
-							| SIGN IN
-							span.caret
-						ul.dropdown-menu aria-labelledby="themes"
-							li
-								a href="/about"  Sign Up
-							li.divider
-							li
-								a href="/login"  title="Login" Log In
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">WildTRACK</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="/about">About</a></li>
+          <li><a href="/Soundtracks to Mary">Soundtracks to Mary</a></li>
+          <li><a href="/one_hit"> One Hit Wonders</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

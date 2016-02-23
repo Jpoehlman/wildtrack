@@ -32,15 +32,13 @@ section {
 }
 
 /*-----------------------------------------------------------------*/
+.navbar-brand  {
+  font-size: 48;
+  color: green;
+}
 
-.container-header {
- background-color: white;
- border: 1px solid lightgrey;
-  }
-
-a.navbar-brand {
-color: red;
-font-size: 56;
+#myNavbar {
+  font-size: 20;
 }
 
 /*-----------------------------------------------------------------*/
