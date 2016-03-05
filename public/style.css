@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 h1 {
@@ -34,11 +34,17 @@ section {
 /*-----------------------------------------------------------------*/
  .navbar-inverse .navbar-nav > li > a {
    font-size: 20;
+
 }
 
 .navbar-brand  {
   font-size: 55;
+
    }
+
+.container-fluid {
+
+}
 
 /*-----------------------------------------------------------------*/
 

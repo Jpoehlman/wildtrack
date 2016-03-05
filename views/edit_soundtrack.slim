@@ -1,0 +1,4 @@
+h1 Edit Soundtrack
+form method="POST" action="/soundtrack/#{@soundtrack.id}"
+  input type="hidden" name="_method" value="PUT"
+  == slim :soundtrack_form

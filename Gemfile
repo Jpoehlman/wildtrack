@@ -1,13 +1,12 @@
-source 'https://rubygems.org'
-
-group :development do
-  gem 'unicorn'
-  gem 'guard'
-  gem 'listen'
-  gem 'rb-inotify', :require => false
-  gem 'rb-fsevent', :require => false
-  gem 'guard-unicorn'
-end
-
-gem 'sinatra'
-gem 'slim'
+source :rubygems
+gem "sinatra"
+gem "slim"
+gem "sass"
+gem "dm-core"
+gem "dm-migrations"
+gem "thin"
+gem "pg", :group => :production
+gem "dm-postgres-adapter", :group => :production
+gem "dm-sqlite-adapter", :group => :development
+gem 'sinatra-flash'
+gem 'pry'

@@ -1,0 +1,9 @@
+label for="title" Soundtrack:
+input#title type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
+label for="songt" Song Title:
+input#length type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
+label for="artist" Artist:
+input#artist type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
+label for="descrip" Scene:
+textarea#descript name="soundtrack[descrip]" == @soundtrack.descrip
+input type="submit" value="Save Soundtrack"

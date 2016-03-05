@@ -1,20 +1,42 @@
 require 'sinatra'
+require 'sinatra/reloader'
 require 'slim'
+require 'pry'
+require 'dm-core'
+require 'dm-migrations'
+require './soundtrack'
+#require 'sinatra/flash'
 
+use Rack::MethodOverride
+
+configure :development do
+  DataMapper.setup(:default, "sqlite3://#{ Dir.pwd}/development.db")
+  DataMapper.auto_upgrade!
+end
+
+configure :production do
+  DataMapper.setup(:default, ENV[' DATABASE_URL'])
+end
 
 configure :development do
   set :bind, '0.0.0.0'
   set :port, 3000
 end
 
-class AddressBook < Sinatra::Base
-
   get '/' do
     slim :home
   end
 
-  get '/login' do
-    slim :login
+  get '/about'  do
+     slim :about
+  end
+
+  get '/test'  do
+     slim :test
+  end
+
+  not_found do
+  	slim :not_found
   end
 
   post '/login' do
@@ -26,17 +48,4 @@ class AddressBook < Sinatra::Base
     end
   end
 
-  get '/about'  do
-    @title = "All About This Website"
-     slim :about
-  end
 
-  not_found do
-  	slim :not_found
-  end
-
-
-
-
-
-end

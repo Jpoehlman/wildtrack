@@ -1,0 +1,9 @@
+h1= @soundtrack.title
+pre= @soundtrack.songt
+pre= @soundtrack.artist
+pre= @soundtrack.descrip
+p <a href="/soundtrack">back to soundtrack list</a>
+p <a href="/soundtrack/#{@soundtrack.id}/edit">edit this soundtrack</a>
+form action="/soundtrack/#{@soundtrack.id}" method="POST"
+  input type="hidden" name="_method" value="DELETE"
+  input type="submit" value="delete this Soundtrack"
