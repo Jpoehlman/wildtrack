@@ -1,7 +1,7 @@
 require 'sinatra'
 #require 'sinatra/reloader'
 require 'slim'
-require 'pry'
+#require 'pry'
 require 'dm-core'
 require 'dm-migrations'
 require './soundtrack'
