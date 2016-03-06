@@ -11,7 +11,7 @@ class Soundtrack
 end
 
 DataMapper.finalize
-DataMapper.auto_upgrade!
+#DataMapper.auto_upgrade!
 
 
 
