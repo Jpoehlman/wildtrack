@@ -11,8 +11,9 @@ class Soundtrack
 end
 
 DataMapper.finalize
+DataMapper.auto_upgrade!
 
-use Rack::MethodOverride
+
 
 get '/soundtrack' do
   @soundtrack = Soundtrack.all
