@@ -1,11 +1,10 @@
 require 'sinatra'
 #require 'sinatra/reloader'
 require 'slim'
-#require 'pry'
 require 'dm-core'
 require 'dm-migrations'
 require './soundtrack'
-#require 'sinatra/flash'
+
 
 configure :development do
   DataMapper.setup(:default, "sqlite3://#{ Dir.pwd}/development.db")
