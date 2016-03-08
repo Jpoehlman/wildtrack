@@ -1,9 +1,32 @@
-label for="title" Soundtrack:
-input#title type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
-label for="songt" Song Title:
-input#length type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
-label for="artist" Artist:
-input#artist type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
-label for="descrip" Scene:
-textarea#descript name="soundtrack[descrip]" == @soundtrack.descrip
-input type="submit" value="Save Soundtrack"
+<row>
+  .col-md-12
+    .form
+      .control-label
+        label for="title" Soundtrack Title
+      input#title type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
+<row>
+  .col-md-12
+    .form
+      .control-label
+        label for="songt" Song Title
+      input#SongTitle type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
+<row>
+  .col-lg-1
+    .form
+      .control-label
+        label for="artist" Artist
+      input#artist type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
+
+<row>
+    .col-md-12
+      .form
+        .control-label
+          label for="descrip" Scene in Movie
+        textarea#descrip rows="6" cols="60" name="soundtrack[descrip]" == @soundtrack.descrip
+<row>
+  .col-md-4
+    .form
+      input type="submit" value="Save Soundtrack"
+  .col-md-4
+     .big
+       p class="text-center" <a href="/soundtrack" > Back to Soundtrack list

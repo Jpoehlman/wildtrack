@@ -1,9 +1,30 @@
-h1= @soundtrack.title
-pre= @soundtrack.songt
-pre= @soundtrack.artist
-pre= @soundtrack.descrip
-p <a href="/soundtrack">back to soundtrack list</a>
-p <a href="/soundtrack/#{@soundtrack.id}/edit">edit this soundtrack</a>
-form action="/soundtrack/#{@soundtrack.id}" method="POST"
-  input type="hidden" name="_method" value="DELETE"
-  input type="submit" value="delete this Soundtrack"
+<row>
+  .col-md-12
+    h1 = @soundtrack.title
+<row>
+   .col-md-3
+    h3 Song
+   .col-md-3
+    h3 Artist
+   .col-md-6
+    h3 Scene in the Movie
+<row>
+   .col-md-3
+    pre= @soundtrack.songt
+   .col-md-3
+    pre= @soundtrack.artist
+   .col-md-6
+    pre= @soundtrack.descrip
+<row>
+   .col-md-4
+     .big
+       p class="text-center" <a href="/soundtrack" > Back to Soundtrack list
+   .col-md-4
+     .big
+       p class="text-center" <a href="/soundtrack/#{@soundtrack.id}/edit"> Edit this Soundtrack
+   .col-md-4
+     .buffer-form
+     form action="/soundtrack/#{@soundtrack.id}" method="POST"
+       input type="hidden" name="_method" value="DELETE"
+         .form
+           input type="submit" class="center-block" value= "Delete this Soundtrack"

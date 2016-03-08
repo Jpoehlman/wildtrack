@@ -1,9 +1,16 @@
-h1 Soundtrack
-a href="/soundtrack/new" Create a new soundtrack
-- if @soundtrack.any?
-    ul#soundtrack
-      -@soundtrack.each do |soundtrack|
-          li <a href="/soundtrack/#{soundtrack.id}">#{soundtrack.title}
-- else
-  p No soundtracks have been created yet!
+.row
+  .col-md-12
+    h1 Soundtracks
 
+.row
+  .col-md-12
+    - if @soundtrack.any?
+      ul#soundtrack
+        -@soundtrack.each do |soundtrack|
+          h2 <a href="/soundtrack/#{soundtrack.id}">#{soundtrack.title}
+    - else
+      p  No soundtracks have been created yet!
+.row
+  .col-md-12
+    .big
+      a href="/soundtrack/new" Create a new soundtrack
