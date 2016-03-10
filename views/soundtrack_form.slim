@@ -1,32 +1,33 @@
 <row>
   .col-md-12
-    .form
+    .formsize
       .control-label
         label for="title" Soundtrack Title
       input#title type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
 <row>
   .col-md-12
-    .form
+    .formsize
       .control-label
         label for="songt" Song Title
       input#SongTitle type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
 <row>
   .col-lg-1
-    .form
+    .formsize
       .control-label
         label for="artist" Artist
       input#artist type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
 
 <row>
-    .col-md-12
-      .form
+    .col-lg-12
+      .formsize
         .control-label
           label for="descrip" Scene in Movie
-        textarea#descrip rows="6" cols="60" name="soundtrack[descrip]" == @soundtrack.descrip
+        textarea#descrip style="min-width: 60%" rows="5" name="soundtrack[descrip]" == @soundtrack.descrip
+
 <row>
   .col-md-4
-    .form
+    .formsize
       input type="submit" value="Save Soundtrack"
-  .col-md-4
-     .big
+  .col-md-12
+    .big
        p class="text-center" <a href="/soundtrack" > Back to Soundtrack list

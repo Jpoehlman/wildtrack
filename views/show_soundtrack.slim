@@ -1,20 +1,17 @@
 <row>
   .col-md-12
-    h1 = @soundtrack.title
+     h1 = @soundtrack.title
+
 <row>
    .col-md-3
-    h3 Song
+     h3 Song
+     pre= @soundtrack.songt
    .col-md-3
-    h3 Artist
+     h3 Artist
+     pre= @soundtrack.artist
    .col-md-6
-    h3 Scene in the Movie
-<row>
-   .col-md-3
-    pre= @soundtrack.songt
-   .col-md-3
-    pre= @soundtrack.artist
-   .col-md-6
-    pre= @soundtrack.descrip
+     h3 Scene in the movie
+     pre= @soundtrack.descrip
 <row>
    .col-md-4
      .big
