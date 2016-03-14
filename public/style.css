@@ -10,6 +10,12 @@ li {
     color: black;
 }
 
+
+a.current {
+  background: #7a421d;
+}
+
+
 .big {
       font-size: 20;
       text-align: center;
@@ -53,18 +59,12 @@ section {
 /*-----------------------------------------------------------------*/
  .navbar-inverse .navbar-nav > li > a {
    font-size: 20;
-
-
 }
 
 .navbar-brand  {
   font-size: 55;
+ }
 
-   }
-
-.container-fluid {
-
-}
 
 /*-----------------------------------------------------------------*/
 
@@ -138,3 +138,4 @@ footer {
     margin-top: 20px;
     color: red;
 }
+

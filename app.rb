@@ -1,8 +1,9 @@
+## Gems
 require 'sinatra'
 #require 'sinatra/reloader'
 require 'slim'
 require './soundtrack'
-
+## Configure
 
 configure :development do
   DataMapper.setup(:default, "sqlite3://#{ Dir.pwd}/development.db")
@@ -18,6 +19,15 @@ configure :development do
   set :port, 3000
 end
 
+## Helpers
+helpers do
+  def current?(path='/')
+     (request.path==path || request.path==path+'/') ? "current" : nil
+  end
+end
+
+
+## Routes
   get '/' do
     slim :home
   end
