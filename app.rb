@@ -7,7 +7,7 @@ require 'slim'
 
 configure :development do
   DataMapper.setup(:default, "sqlite3://#{ Dir.pwd}/development.db")
-  DataMapper.auto_upgrade!
+  #DataMapper.auto_upgrade!
 end
 
 configure :production do
