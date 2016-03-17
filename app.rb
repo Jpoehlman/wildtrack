@@ -1,13 +1,13 @@
 ## Gems
 require 'sinatra'
-#require 'sinatra/reloader'
+require 'sinatra/reloader'
 require 'slim'
 require './soundtrack'
 ## Configure
 
 configure :development do
   DataMapper.setup(:default, "sqlite3://#{ Dir.pwd}/development.db")
- # DataMapper.auto_upgrade!
+  DataMapper.auto_upgrade!
 end
 
 configure :production do

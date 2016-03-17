@@ -1,33 +1,72 @@
-<row>
-  .col-md-12
-    .formsize
-      .control-label
-        label for="title" Soundtrack Title
-      input#title type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
-<row>
-  .col-md-12
-    .formsize
-      .control-label
-        label for="songt" Song Title
-      input#SongTitle type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
-<row>
-  .col-lg-1
-    .formsize
-      .control-label
-        label for="artist" Artist
-      input#artist type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
+pre.alignpre
+
+  row.formsize
+    form-horizontal
+      form-group
+         col-sm-2
+           label for="title"
+             h3 Create a title for your Soundtrack
+           col-sm-2
+             input.form-control type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
+
+  row.formsize
+    form-horizontal
+      form-group
+        col-sm-2
+          label for="sel1"
+           h3 Select a Genre
+          col-sm-10
+          select.form-control type="sel1" name="soundtrack[genre]" value="#{@soundtrack.genre}"
+             <option>Action/Adventure</option>
+             <option>Drama</option>
+             <option>Comedy</option>
+             option Mockumentery
+             option Musical
+             <option>Romance</option>
+
+  row.formsize
+    form-horizontal
+      form-group
+        col-sm-2
+          label for="tagline"
+            h3 Add a memorable movie tagline
+            p &#40e.x. A man, a women, and the toliet they shared for an evening&#41
+        col-sm-10
+          input.form-control type="string" name="soundtrack[tagline]" value="#{@soundtrack.tagline}"
+
+  <row>
+    form-horizontal
+      form-group
+        col-sm-2
+          label for="songt"
+            h3 Add a song title to your soundtrack
+        col-sm-10
+          input.form-control type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
+
+  <row>
+    form-horizontal
+      form-group
+        col-sm-2
+          label for="artist"
+            h3 Song artist
+          col-sm-10
+            input.form-control type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
+
+  <row>
+    form-horizontal
+      form-group
+        col-sm-2
+          label for="descrip"
+            h3 Describe the matching scence from the movie
+        col-sm-10
+          textarea.form-control style="min-width: 100%" rows="5" name="soundtrack[descrip]" == @soundtrack.descrip
+  <row>
+    .form
+      input.show2 type="submit" class="text-center" value="Save Soundtrack"
+
 
 <row>
-    .col-lg-12
-      .formsize
-        .control-label
-          label for="descrip" Scene in Movie
-        textarea#descrip style="min-width: 60%" rows="5" name="soundtrack[descrip]" == @soundtrack.descrip
-
-<row>
-  .col-md-12
-    .formsize
-      input type="submit" value="Save Soundtrack"
   .col-md-12
     .big
-       p class="text-center" <a href="/soundtrack" > Back to Soundtrack list
+      p.lower class="text-center" <a href="/soundtrack" > Back to Soundtrack list
+

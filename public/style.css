@@ -1,13 +1,60 @@
-body {
-  padding-top: 0px;
+.title {
+  text-align: center;
 }
 
-h1 {
-    text-align: center;
+.alignpre {
+	margin:0 auto;
+  width: 60%;
+	color: white;
+  background: #F9BF1A;
+  border: transparent;
+  border-radius: 10px;
 }
 
-li {
-    color: black;
+.tableform {
+  color: grey;
+}
+
+.lower {
+  margin-top: 25px;
+}
+
+hr.big {
+  width: 90%;
+  border-width: 3px;
+}
+
+.show {
+  color: red;
+  margin: 20;
+  font-size: 20px;
+  background: transparent;
+  border-color: red;
+  border-radius: 10px;
+  }
+
+.show2 {
+  color: blue;
+  margin-top: 25;
+  margin-bottom: 10;
+  font-size: 18px;
+  text-align: center-block;
+  background: transparent;
+  border-color: blue;
+  border-radius: 10px;
+}
+
+
+pre.fix{
+  color: grey;
+  background: orange;
+  border: transparent;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+  margin: 25;
 }
 
 
@@ -19,29 +66,22 @@ a.current {
 .big {
       font-size: 20;
       text-align: center;
+      color: white;
 }
 
-.buffer-form
-{
-  margin-top:20px;
-  font-size: 20;
-}
-
-
-.formsize{
-  margin-top:20px;
-  font-size:20px;
-  color: black;
+.bbig {
+      font-size: 18px;
+      text-align: center;
+      margin-top:25px;
 }
 
 
-p {
-    text-align: justify;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+label {
+  color: grey;
 }
+
+
 
 section {
     /* Allow scrollspy to work without fixed navbar getting in the way of top line*/
@@ -138,4 +178,6 @@ footer {
     margin-top: 20px;
     color: red;
 }
+
+
 

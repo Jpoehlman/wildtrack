@@ -1,19 +1,24 @@
 require 'dm-core'
 require 'dm-migrations'
+require 'dm-timestamps'
+require 'date'
 
 class Soundtrack
   include DataMapper::Resource
   property :id, Serial
+  property :genre, String
+  property :tagline, String
+  property :created_at,DateTime
   property :title, String
   property :songt, String
   property :artist, String
   property :descrip, Text
+
+
 end
 
 DataMapper.finalize
-#DataMapper.auto_upgrade!
-
-
+#DataMapper.auto_migrate!
 
 get '/soundtrack' do
   @soundtrack = Soundtrack.all
