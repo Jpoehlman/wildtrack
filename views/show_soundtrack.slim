@@ -1,16 +1,23 @@
-<row>
+.row
+  .col-md-2
+    h4.text-title TITLE:
   .col-md-3
-    h5.text-title TITLE: #{ @soundtrack.title}
-  .col-md-6
-    h5.text-title TAGLINE: #{ @soundtrack.tagline}
+    h4 =@soundtrack.title
+
+.row
+  .col-md-2
+    h4.text-title TAGLINE:
   .col-md-3
-    h5.text-title BY:      JonArrow
+    h4 =@soundtrack.tagline
 
-<row>
-  .col-md-12
-    p
+.row
+  .col-md-2
+    h4.text-title BY:
+  .col-md-3
+    h4 JonArrow
 
-<row>
+
+.row
   pre.pre-black
      .col-md-3
        p.text-title Song
@@ -21,7 +28,7 @@
      .col-md-6
        p.text-title Scene from the movie
        pre= @soundtrack.descrip
-<row>
+.row
    .col-md-4.text-center
        a.link-size.text-center href="/soundtrack"  Back to Soundtrack list
    .col-md-4.text-center
