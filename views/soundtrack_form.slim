@@ -1,72 +1,73 @@
-pre.alignpre
+.col-md-2
+.col-md-10
+  pre.pre-black   style="width: 60%"
 
-  row.formsize
-    form-horizontal
-      form-group
-         col-sm-2
-           label for="title"
-             h3 Create a title for your Soundtrack
+    row
+      form-horizontal
+        form-group
            col-sm-2
-             input.form-control type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
+             label for="title"
+               p.text-title.form-lower Create a title for your Soundtrack
+             col-sm-2
+               input.form-control type="string" name="soundtrack[title]" value="#{@soundtrack.title}"
 
-  row.formsize
-    form-horizontal
-      form-group
-        col-sm-2
-          label for="sel1"
-           h3 Select a Genre
+    row
+      form-horizontal
+        form-group
+          col-sm-2
+            label for="sel1"
+             p.text-title.form-lower Select a Genre
+            col-sm-10
+            select.form-control type="sel1" name="soundtrack[genre]" value="#{@soundtrack.genre}"
+               <option>Action/Adventure</option>
+               <option>Drama</option>
+               <option>Comedy</option>
+               option Mockumentery
+               option Musical
+               <option>Romance</option>
+
+    row
+      form-horizontal
+        form-group
+          col-sm-2
+            label for="tagline"
+              p.text-title.form-lower Add a memorable movie tagline
           col-sm-10
-          select.form-control type="sel1" name="soundtrack[genre]" value="#{@soundtrack.genre}"
-             <option>Action/Adventure</option>
-             <option>Drama</option>
-             <option>Comedy</option>
-             option Mockumentery
-             option Musical
-             <option>Romance</option>
+            input.form-control type="string" name="soundtrack[tagline]" value="#{@soundtrack.tagline}"
 
-  row.formsize
-    form-horizontal
-      form-group
-        col-sm-2
-          label for="tagline"
-            h3 Add a memorable movie tagline
-            p &#40e.x. A man, a women, and the toliet they shared for an evening&#41
-        col-sm-10
-          input.form-control type="string" name="soundtrack[tagline]" value="#{@soundtrack.tagline}"
-
-  <row>
-    form-horizontal
-      form-group
-        col-sm-2
-          label for="songt"
-            h3 Add a song title to your soundtrack
-        col-sm-10
-          input.form-control type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
-
-  <row>
-    form-horizontal
-      form-group
-        col-sm-2
-          label for="artist"
-            h3 Song artist
+    row
+      form-horizontal
+        form-group
+          col-sm-2
+            label for="songt"
+              p.text-title.form-lower Add a song title to your soundtrack
           col-sm-10
-            input.form-control type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
+            input.form-control type="string" name="soundtrack[songt]" value="#{@soundtrack.songt}"
 
+    row.text-title
+      form-horizontal
+        form-group
+          col-sm-2
+            label for="artist"
+              p.text-title.form-lower Song artist
+            col-sm-10
+              input.form-control type="string" name="soundtrack[artist]" value="#{@soundtrack.artist}"
+
+    row.text-title
+      form-horizontal
+        form-group
+          col-sm-2
+            label for="descrip"
+              p.text-title.former-lower Describe the scence from the movie
+          col-sm-10
+            textarea.form-control  rows="5" name="soundtrack[descrip]" == @soundtrack.descrip
+    <row>
+      .form
+        input.lower.link-size type="submit" class="text-center" value="Save Soundtrack"
+
+.col-md-2
+.col-md-10
   <row>
-    form-horizontal
-      form-group
-        col-sm-2
-          label for="descrip"
-            h3 Describe the matching scence from the movie
-        col-sm-10
-          textarea.form-control style="min-width: 100%" rows="5" name="soundtrack[descrip]" == @soundtrack.descrip
-  <row>
-    .form
-      input.show2 type="submit" class="text-center" value="Save Soundtrack"
-
-
-<row>
-  .col-md-12
-    .big
-      p.lower class="text-center" <a href="/soundtrack" > Back to Soundtrack list
+    .col-md-12
+      a.link-size href="/soundtrack" Back to Soundtrack list
 

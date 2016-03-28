@@ -1,30 +1,34 @@
 <row>
-  .col-md-12
-    h1.center = @soundtrack.title
-    i
-      h3.center =@soundtrack.tagline
+  .col-md-3
+    h5.text-title TITLE: #{ @soundtrack.title}
+  .col-md-6
+    h5.text-title TAGLINE: #{ @soundtrack.tagline}
+  .col-md-3
+    h5.text-title BY:      JonArrow
 
 <row>
-  pre.fix
+  .col-md-12
+    p
+
+<row>
+  pre.pre-black
      .col-md-3
-       h3 Song
+       p.text-title Song
        pre= @soundtrack.songt
      .col-md-3
-       h3 By the artist
+       p.text-title By the artist
        pre= @soundtrack.artist
      .col-md-6
-       h3 Scene from the movie
+       p.text-title Scene from the movie
        pre= @soundtrack.descrip
 <row>
-   .col-md-4
-     .big
-       p.lower class="text-center" <a href="/soundtrack" > Back to Soundtrack list
-   .col-md-4
-     .big
-       p.lower class="text-center" <a href="/soundtrack/#{@soundtrack.id}/edit"> Edit this Soundtrack
-   .col-md-4
+   .col-md-4.text-center
+       a.link-size.text-center href="/soundtrack"  Back to Soundtrack list
+   .col-md-4.text-center
+       a.link-size.text-center href="/soundtrack/#{@soundtrack.id}/edit" Edit this Soundtrack
+   .col-md-4.text-center
      .buffer-form
      form action="/soundtrack/#{@soundtrack.id}" method="POST"
         input type="hidden" name="_method" value="DELETE"
          .form
-             input.show type="submit" class="text-center" value= "Delete this Soundtrack"
+             input.link-size type="submit"  value= "Delete this Soundtrack"

@@ -1,86 +1,46 @@
-.title {
-  text-align: center;
-}
-
-.alignpre {
-	margin:0 auto;
-  width: 60%;
-	color: white;
-  background: #F9BF1A;
-  border: transparent;
+.pre-black {
   border-radius: 10px;
+  margin: 5px;
+  background: #FDD59A;
+  border: 1px solid grey;
 }
 
-.tableform {
-  color: grey;
+.form-control {
+  border: 1px solid grey;
+}
+
+.text-title{
+    color: grey;
+}
+
+.small-title{
+    font-size: 16px;
+    color: black;
+}
+
+.centered {
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:50%;
+    top:50%;
+    margin-left:-50px;
+    margin-top:-50px;
 }
 
 .lower {
-  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-top:   15px;
 }
 
-hr.big {
-  width: 90%;
-  border-width: 3px;
+.form-lower {
+  margin-top: 15px;
 }
 
-.show {
-  color: red;
-  margin: 20;
-  font-size: 20px;
-  background: transparent;
-  border-color: red;
-  border-radius: 10px;
-  }
-
-.show2 {
-  color: blue;
-  margin-top: 25;
-  margin-bottom: 10;
-  font-size: 18px;
-  text-align: center-block;
-  background: transparent;
-  border-color: blue;
-  border-radius: 10px;
+.link-size {
+  color: #F87217;
+  font-size: 14px;
 }
-
-
-pre.fix{
-  color: grey;
-  background: orange;
-  border: transparent;
-  border-radius: 10px;
-}
-
-.center {
-  text-align: center;
-  margin: 25;
-}
-
-
-a.current {
-  background: #7a421d;
-}
-
-
-.big {
-      font-size: 20;
-      text-align: center;
-      color: white;
-}
-
-.bbig {
-      font-size: 18px;
-      text-align: center;
-      margin-top:25px;
-}
-
-
-
-label {
-  color: grey;
-}
-
 
 
 section {
