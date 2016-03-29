@@ -7,7 +7,6 @@ require './soundtrack'
 
 configure :development do
   DataMapper.setup(:default, "sqlite3://#{ Dir.pwd}/development.db")
-  #DataMapper.auto_upgrade!
 end
 
 configure :production do
@@ -44,13 +43,5 @@ end
   	slim :not_found
   end
 
-  post '/login' do
-    if params[:username] == settings.username && params[:password] == settings.password
-      session[:admin] = true
-      redirect to('/about')
-    else
-      slim :login
-    end
-  end
 
 
