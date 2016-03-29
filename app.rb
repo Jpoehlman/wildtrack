@@ -3,8 +3,8 @@ require 'sinatra'
 #require 'sinatra/reloader'
 require 'slim'
 require './soundtrack'
-## Configure
 
+## Configure
 configure :development do
   DataMapper.setup(:default, "sqlite3://#{ Dir.pwd}/development.db")
 end
