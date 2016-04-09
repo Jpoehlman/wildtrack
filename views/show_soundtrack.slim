@@ -1,24 +1,18 @@
 .row
-  .col-md-2
-    h4.text-title TITLE:
+  .col-md-1
+  .col-md-1
+    h5.text-title TITLE:
   .col-md-3
-    h4 =@soundtrack.title
+    h3 =@soundtrack.title
+  .col-md-1
+    h5.text-title TAGLINE:
+  .col-md-3
+    h3 =@soundtrack.tagline
 
-.row
-  .col-md-2
-    h4.text-title TAGLINE:
-  .col-md-3
-    h4 =@soundtrack.tagline
-
-.row
-  .col-md-2
-    h4.text-title BY:
-  .col-md-3
-    h4 JonArrow
 
 
 .row
-  pre.pre-black
+  .pre
      .col-md-3
        p.text-title Song
        pre= @soundtrack.songt
@@ -28,6 +22,11 @@
      .col-md-6
        p.text-title Scene from the movie
        pre= @soundtrack.descrip
+
+.row
+  .col-md-3
+    h5 By JonArrow
+
 .row
    .col-md-4.text-center
        a.link-size.text-center href="/soundtrack"  Back to Soundtrack list
