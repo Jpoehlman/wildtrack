@@ -13,8 +13,6 @@ class Soundtrack
   property :songt, String
   property :artist, String
   property :descrip, Text
-
-
 end
 
 DataMapper.finalize
@@ -50,7 +48,6 @@ put '/soundtrack/:id' do
     soundtrack.update(params[:soundtrack])
     redirect to("/soundtrack/#{soundtrack.id}")
 end
-
 
 delete '/soundtrack/:id' do
     Soundtrack.get(params[:id]).destroy
