@@ -3,6 +3,7 @@ require 'sinatra'
 #require 'sinatra/reloader'
 require 'slim'
 require './soundtrack'
+require 'dm-postgres-adapter'
 
 ## Configure
 configure :development do
