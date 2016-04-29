@@ -1,4 +1,4 @@
-source :rubygems
+https://rubygems.org
 gem "sinatra"
 gem "slim"
 gem "dm-core"

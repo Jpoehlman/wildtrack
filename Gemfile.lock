@@ -24,7 +24,7 @@ GEM
       data_objects (= 0.10.17)
     do_sqlite3 (0.10.17)
       data_objects (= 0.10.17)
-    eventmachine (1.0.9.1)
+    eventmachine (1.2.0.1)
     pg (0.18.4)
     rack (1.6.4)
     rack-protection (1.5.3)
