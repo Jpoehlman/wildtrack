@@ -1,4 +1,4 @@
-/usr/local/opt/rbenv/versions/2.1.5/bin/ruby -r ./siteconf20160226-570-1jzkfs0.rb extconf.rb
+/usr/local/opt/rbenv/versions/2.1.5/bin/ruby -r ./siteconf20160501-6324-1leliif.rb extconf.rb
 checking for main() in -lc... yes
 creating Makefile
 
@@ -28,5 +28,5 @@ compiling parser.c
 linking shared-object thin_parser.so
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 thin_parser.so ./.gem.20160226-570-19bp2fd
+/usr/bin/install -c -m 0755 thin_parser.so ./.gem.20160501-6324-qoisy6
 installing default thin_parser libraries
