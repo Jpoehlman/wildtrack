@@ -1,38 +1,34 @@
+.frame
+  .row
+    <div class="table-responsive">
+      <table class="table">
+        thead.background-black
+          <tr>
+            th.text-title Sountrack
+            th.text-title Genre
+            th.text-title Tagline
+            th.text-title Date Created
+          </tr>
+        </thead>
+        <tbody>
+           - if @soundtrack.any?
+            tr#soundtrack
+              -@soundtrack.each do |soundtrack|
+                tr
+                  th
+                    a href="/soundtrack/#{soundtrack.id}" #{soundtrack.title}
+                  th #{soundtrack.genre}
+                  th #{soundtrack.tagline}
+                  th #{soundtrack.created_at.strftime("%l:%M %p on %m/%d/%y")}
+                </tr>
+           - else
+             tr
+               th  No soundtracks have been created yet!
 
-.row
+        </tbody>
+      </table>
+    </div>
 
-  <div class="table-responsive">
-  <table class="table">
-    thead.background-black
-      <tr>
-        th.text-title Sountrack
-        th.text-title Genre
-        th.text-title Tagline
-        th.text-title Date Created
-      </tr>
-    </thead>
-    <tbody>
-       - if @soundtrack.any?
-        tr#soundtrack
-          -@soundtrack.each do |soundtrack|
-            tr
-              th
-                a href="/soundtrack/#{soundtrack.id}" #{soundtrack.title}
-              th #{soundtrack.genre}
-              th #{soundtrack.tagline}
-              th #{soundtrack.created_at.strftime("%l:%M %p on %m/%d/%y")}
-            </tr>
-       - else
-         tr
-           th  No soundtracks have been created yet!
-
-    </tbody>
-  </table>
-  </div>
-
-
-
-
-.row
-  .col-md-12
-    a.link-size href="/soundtrack/new" Create a new soundtrack
+  .row
+    .col-md-2
+      a.link-size href="/soundtrack/new" Create a new soundtrack

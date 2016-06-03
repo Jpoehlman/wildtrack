@@ -1,9 +1,20 @@
 .navbar{
    border-bottom: 1px solid grey;
    border-radius: 0px;
-   background: #303030;
-   color: #F87217
+   background: white;
+   color: #f1ebf0
 }
+
+.box {
+  background: #ffd699;
+  padding: 5px;
+  border-radius: 5px;
+  }
+
+.table-responsive {
+   margin: auto;
+  }
+
 
 .bump {
   padding-left: 160px;
@@ -12,16 +23,22 @@
 .pre-black {
   border-radius: 10px;
   margin: 5px;
-  background: #f5f5f5;
-  border: 1px solid grey;
+  background: #ffd699;
+
 }
 
 .form-control {
   border: 1px solid grey;
 }
 
-.text-title{
+.text-titlew{
     color: grey;
+    font-size: 24;
+}
+
+.text-titleg{
+    color: grey;
+    font-size: 24;
 }
 
 .small-title{
